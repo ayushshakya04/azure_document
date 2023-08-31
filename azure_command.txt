@@ -1,0 +1,19 @@
+access the VM for command
+
+chmod 400 my-first-vm_key.pem
+ssh -i YOUR_KEY_PATH azureuser@PUBLIC_IP_ADDRESS
+ssh -i my-first-vm_key.pem azureuser@13.90.35.80
+
+update your VM by cmd
+ 
+apt-get -y update
+apt-get -y install nginx
+ 
+echo "Hello World"
+echo "Hello World" > /var/www/html/index.html
+echo "Hello World from in28minutes" > /var/www/html/index.html
+ 
+hostname
+echo "$(hostname)"
+echo "Hello World from $(hostname)"
+echo "Hello World from $(hostname)" > /var/www/html/index.html
